@@ -6,7 +6,7 @@ I would like to thank Selinger for taking the time to personally explain the dat
 
 
 Background Subtraction:
-@inproceedings{Zivk2004,
+`@inproceedings{Zivk2004,
 authors="Z.Zivkovic",
 title ="Improved adaptive Gausian mixture model for background subtraction",
 booktitle="Proceedings of the International Conference on Pattern Recognition",
@@ -18,13 +18,13 @@ probability density. Recursive equations are used to
 constantly update the parameters and but also to simultaneously
 select the appropriate number of components for
 each pixel."
-} 
+}` 
 
 
 
 Facedetection:
 Algorithm:
-@inproceedings{citeulike:1281758,
+`@inproceedings{citeulike:1281758,
 	abstract = {Recently Viola et al. [2001] have introduced a rapid object detection. scheme based on a boosted cascade of simple feature classifiers. In this paper we introduce a novel set of rotated Haar-like features. These novel features significantly enrich the simple features of Viola et al. and can also be calculated efficiently. With these new rotated features our sample face detector shows off on average a 10\% lower false alarm rate at a given hit rate. We also present a novel post optimization procedure for a given boosted cascade improving on average the false alarm rate further by 12.5\%.},
 	author = {Lienhart, R.  and Maydt, J. },
 	citeulike-article-id = {1281758},
@@ -38,10 +38,10 @@ Algorithm:
 	url = {http://dx.doi.org/10.1109/ICIP.2002.1038171},
 	volume = {1},
 	year = {2002}
-}
+}`
 
 Dataset:
-@techreport{citeulike:1227005,
+`@techreport{citeulike:1227005,
 	abstract = {Recently Viola et al. have introduced a rapid object detection
 scheme based on a boosted cascade of simple feature classifiers. In
 this paper we introduce and empirically analysis two extensions to
@@ -70,10 +70,10 @@ sourceforge.net [8].},
 	title = {Empirical Analysis of Detection Cascades of Boosted Classifiers for Rapid Object
 Detection},
 	year = {2002}
-}
+}`
 
 Tooning:
-@article{1142018,
+`@article{1142018,
  author = {Holger Winnem\"{o}ller and Sven C. Olsen and Bruce Gooch},
  title = {Real-time video abstraction},
  journal = {ACM Trans. Graph.},
@@ -85,10 +85,10 @@ Tooning:
  doi = {http://doi.acm.org/10.1145/1141911.1142018},
  publisher = {ACM},
  address = {New York, NY, USA},
- }
+ }`
 
 Segmentation:
-@article{981796,
+`@article{981796,
  author = {Pedro F. Felzenszwalb and Daniel P. Huttenlocher},
  title = {Efficient Graph-Based Image Segmentation},
  journal = {Int. J. Comput. Vision},
@@ -100,7 +100,7 @@ Segmentation:
  doi = {http://dx.doi.org/10.1023/B:VISI.0000022288.19776.77},
  publisher = {Kluwer Academic Publishers},
  address = {Hingham, MA, USA},
- }
+ }`
 
 
 Raster to Vector and SVG:	
