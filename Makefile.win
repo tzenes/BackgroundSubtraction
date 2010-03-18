@@ -1,0 +1,42 @@
+# Project: BSubtraction
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = 
+OBJ  = Main.o CvPixelBackgroundGMM.o Toonsville.o potrace/backend_svg.o potrace/curve.o $(RES)
+LINKOBJ  = Main.o CvPixelBackgroundGMM.o Toonsville.o potrace/backend_svg.o potrace/curve.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -L"C:/Program Files/OpenCV/lib" -L"C:/Program Files/OpenCV/otherlibs/highgui" -L"C:/Program Files/OpenCV/lib" -lcxcore -lcv -lcvaux -lhighgui -lml -lcvcam -L./potrace -lpotrace  -g3 
+INCS =  -I"C:/Dev-Cpp/include"  -I"C:/Program Files/OpenCV/cv/include"  -I"C:/Program Files/OpenCV/cvaux/include"  -I"C:/Program Files/OpenCV/cxcore/include"  -I"C:/Program Files/OpenCV/ml/include"  -I"C:/Program Files/OpenCV/otherlibs/cvcam/include"  -I"C:/Program Files/OpenCV/otherlibs/highgui" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include"  -I"C:/Program Files/OpenCV/otherlibs/cvcam/include"  -I"C:/Program Files/OpenCV/otherlibs/highgui"  -I"C:/Program Files/OpenCV/cv/include"  -I"C:/Program Files/OpenCV/cxcore/include"  -I"C:/Program Files/OpenCV/cvaux/include"  -I"C:/Program Files/OpenCV/ml/include" 
+BIN  = BSubtraction.exe
+CXXFLAGS = $(CXXINCS) -I. -I.\potrace   -L"C:\Program Files\OpenCV\lib" -lcxcore -lcv -lcvaux -lhighgui -lml -lcvcam -g3
+CFLAGS = $(INCS)   -L"C:\Program Files\OpenCV\lib" -lcxcore -lcv -lcvaux -lhighgui -lml -lcvcam -g3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before BSubtraction.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "BSubtraction.exe" $(LIBS)
+
+Main.o: Main.cpp
+	$(CPP) -c Main.cpp -o Main.o $(CXXFLAGS)
+
+CvPixelBackgroundGMM.o: CvPixelBackgroundGMM.cpp
+	$(CPP) -c CvPixelBackgroundGMM.cpp -o CvPixelBackgroundGMM.o $(CXXFLAGS)
+
+Toonsville.o: Toonsville.cpp
+	$(CPP) -c Toonsville.cpp -o Toonsville.o $(CXXFLAGS)
+
+potrace/backend_svg.o: potrace/backend_svg.c
+	$(CPP) -c potrace/backend_svg.c -o potrace/backend_svg.o $(CXXFLAGS)
+
+potrace/curve.o: potrace/curve.c
+	$(CPP) -c potrace/curve.c -o potrace/curve.o $(CXXFLAGS)
